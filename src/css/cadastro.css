@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: #000925;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+}
+body{
+    background-image: url(../assets/plano-fundo.jpg);
+}
+h1{
+    color: white;
+    margin-bottom: 60px;
+    font-size: 40px;
+}
+h3{
+    color: white;
+}
+p{
+    color: white;
+    font-size: 15px;
+}
+#logo{
+    height: 100px;
+    width: 110px;
+    margin-left: 20px;
+}
+#cadastrar{
+    background:linear-gradient(#000925,#310050);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin-top: 100px;
+    height: 500px;
+    width: 400px;
+    border-radius: 20px;
+    margin-left: 455px;
+    margin-bottom: 100px;
+}
+.symbol{
+    width:45px;
+    height: 45px;
+}
+.input{
+    width: 300px;
+    height: 50px;
+    background-color: #C3C3C3;
+    border-radius: 30px;
+}
+.inserir{
+    display: flex;
+    margin-top: 30px;
+}
+#botao{
+    width: 100px;
+    height: 50px;
+    background-color: #C3C3C3;
+    border-radius: 30px;
+    font-size: 20px;
+    margin-top: 60px;
+}
+footer{
+    background-color: #000925;
+    display:flex;
+    padding-top: 100px;
+}
+.tower{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#icon2{
+    height:200px;
+    width: 200px;
+}
+.redes{
+    display: flex;
+    justify-content: center;
+    margin: 130px 0 30px 0;
+}
+#correcao{
+    display: flex;
+    flex-direction: column;
+    margin-left: -360px;
+    margin-top: 200px;
+}
+@media (max-width:500px) {
+    header{
+        height: 60px;
+    }
+    #logo{
+        height: 60px;
+        width: 65px;
+        margin-left: 20px;
+    }
+    #cadastrar{
+        margin-left: 20px;
+    }
+    footer{
+        flex-direction: column;
+    }
+    #icon2{
+        width: 180px;
+        height: 180px;
+        margin-left: 135px;
+    }
+    .tower{
+        margin-left: 160px;
+        margin-right: 0px;
+        margin-top: 40px;
+    }
+    #correcao{
+        margin-left: 0;
+        margin-top: 0;
+    }
+}

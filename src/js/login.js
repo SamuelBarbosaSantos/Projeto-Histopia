@@ -1,7 +1,7 @@
-function entrar(){
+function botao(){
     const login = document.getElementById('login').value;
     const senha = document.getElementById('senha').value;
-    if(login == "Samuel" && senha == "12345"){
+    if(login == "Admin" && senha == "Admin"){
         window.location.href='index.html';
     }else{
         alert ('Senha ou login errado')

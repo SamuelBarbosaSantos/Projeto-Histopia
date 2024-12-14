@@ -4,18 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-  <link rel="icon" href="./src/assets/logo histopia fundo.png" >
+    <link rel="icon" href="./src/assets/logo histopia fundo.png" >
+    <link rel="stylesheet" href="./src/css/cadastro.css">
 </head>
 <body>
     <header>
         <a href="index.html"><img src="src/assets/logo histopia fundo.png" id="logo"></a>
     </header>
-    <div class="cadastrar">
+    <div id="cadastrar">
         <h1>Login</h1>
-        <input type="text" class="input" id="login" placeholder="Digite seu E-mail"><img src="./src/assets/icon login.png">
-        <input type="password" class="input" id="senha" placeholder="Digite sua Senha"><img src="./src/assets/icon senha.png">
-        <input type="password" class="input" id="senha" placeholder="Confirme sua Senha"><img src="./src/assets/icon senha.png">
-        <button onclick="window.location.href='index.html'">Criar</button>
+        <div class="inserir">
+            <input type="text" class="input" placeholder="Digite seu E-mail">
+            <img src="./src/assets/icon login.svg" class="symbol">
+        </div>
+        <div class="inserir">
+            <input type="password" class="input" placeholder="Digite sua Senha">
+            <img src="./src/assets/icon senha.svg" class="symbol">
+        </div>
+        <div class="inserir">
+            <input type="password" class="input" placeholder="Confirme sua Senha">
+            <img src="./src/assets/icon senha.svg" class="symbol">
+        </div>
+        <button onclick="window.location.href='index.html'" id="botao">Criar</button>
+        <h3>Já tem uma conta??</h3>
+        <a href="login.html"><h3>Acesse aqui</h3></a>
     </div>
     <footer>
         <img src="src/assets/Logo histopia.png" id="icon2">
@@ -34,12 +46,14 @@
             <p>Politica de privacidade</p>
             <p>Politica de cookies</p>
         </div>
-        <div id="symbols">
-            <img src="src/assets/icon instagram.png">
-            <img src="src/assets/icon twitter.png">
-            <img src="src/assets/icon facebook.png">
+        <div id="correcao">
+            <div id="symbols">
+                <img src="src/assets/icon instagram.png">
+                <img src="src/assets/icon twitter.png">
+                <img src="src/assets/icon facebook.png">
+            </div>
+            <p>@Copyright 2024-todos os direitos reservados</p>
         </div>
-            <h6>@Copyright 2024-todos os direitos reservados</h6>
     </footer>
 </body>
 </html>

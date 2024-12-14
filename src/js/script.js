@@ -33,13 +33,13 @@ function updateDetails(index) {
 
 function showNext() {
   currentIndex = (currentIndex + 1) % images.length;
-  carouselInner.style.transform = `translateX(-${currentIndex * 200}px)`;
+  carouselInner.style.transform = `translateX(-${currentIndex * 400}px)`;
   updateDetails(currentIndex);
 }
 
 function showPrev() {
   currentIndex = (currentIndex - 1 + images.length) % images.length;
-  carouselInner.style.transform = `translateX(-${currentIndex * 200}px)`;
+  carouselInner.style.transform = `translateX(-${currentIndex * 400}px)`;
   updateDetails(currentIndex);
 }
 

@@ -16,14 +16,12 @@ header{
     position: absolute;
     position:fixed;
 }
-/*.input-with-image {
-    background: url('./src/assets/Icone de pesquisa') no-repeat left center;
-    background-size: 20px;
-    padding-left: 30px;  
-    height: 30px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}*/
+#search{
+    width: 300px;
+    height: 50px;
+    background-color: #C3C3C3;
+    border-radius: 30px;
+}
 p{
     font-size:20px;
 }
@@ -35,8 +33,8 @@ h2{
     margin-top: 50px;
 }
 #logo{
-    height: 60px;
-    width: 65px;
+    height: 100px;
+    width: 110px;
     margin-left: 20px;
 }
 .icon_nav{
@@ -44,16 +42,20 @@ h2{
     width: 25px;
     margin-right: 15px;
 }
-#banner{
+#imagens{
     width: 100%;
     margin-bottom: 50px;
     margin-top: 100px;
 }
 .botao{
-    border: 5px solid white;
+    border: 20px solid white;
     border-width: 10px;
     border-radius: 15px;
     box-shadow: 15px 18px #8d8d8d;
+}
+.logos{
+    width: 125px;
+    height: 100px;
 }
 #empresas{
     display: flex;
@@ -102,12 +104,41 @@ h2{
     background-color:#000925;
     flex-direction: column;
     display:flex;
-    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+#ultimate2{
+    display:flex;
+    justify-content: space-around;
+}
+#prev{
+    width: 50px;
+    height: 50px;
+    margin-top: 250px;
+    margin-right: 400px;
+}
+#next{
+    width: 50px;
+    height: 50px;
+    margin-top: 250px;
+    margin-left: 400px;
 }
 #carousel{
     display: flex;
     overflow: hidden;
-    width: 200px;
+    width: 400px;
+}
+#ultimatedesc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+}
+.txtprice{
+    color: white;
+}
+#discount{
+    color: white;
 }
 #title{
     color: #d7ac00;
@@ -124,6 +155,7 @@ h2{
 footer{
     background-color: #000925;
     display:flex;
+    padding-top: 100px;
 }
 footer p{
     color: white;
@@ -146,9 +178,28 @@ footer h6{
     justify-content: center;
     margin: 130px 0 30px 0;
 }
+#correcao{
+    display: flex;
+    flex-direction: column;
+    margin-left: -360px;
+    margin-top: 200px;
+}
 @media (max-width:500px) {
     header{
         height: 60px;
+    }
+    #logo{
+        height: 60px;
+        width: 65px;
+        margin-left: 20px;
+    }
+    .icon_nav{
+        height: 25px;
+        width: 25px;
+        margin-right: 10px;
+    }
+    #search{
+        width: 150px;
     }
     h2{
         font-size: 40px;
@@ -156,7 +207,7 @@ footer h6{
     p{
         font-size: 15px;
     }
-    #banner{
+    #imagens{
         margin-top: 60px;
     }
     .logos{
@@ -189,6 +240,19 @@ footer h6{
         width: 50px;
         height: 50px;
         margin-left: 25px;
+    }
+    #prev{
+        width: 20px;
+        height: 20px;
+        margin-right:0;
+    }
+    #next{
+        width: 20px;
+        height: 20px;
+        margin-left:0;
+    }
+    #ultimatedesc{
+        width: 490px;
     }
     footer{
         flex-direction: column;

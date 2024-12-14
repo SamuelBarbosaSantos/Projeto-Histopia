@@ -10,7 +10,7 @@
 <body>
     <header>
         <a href="index.html"><img src="src/assets/logo histopia fundo.png" id="logo"></a>
-        <input type="text" class="input-with-image" placeholder="Pesquisar...">
+        <input type="text" id="search" placeholder="Pesquisar...">
         <div id="options">
             <a><img src="src/assets/icone telefone.png" class="icon_nav" id="telefone"></a>
             <a><img src="src/assets/Icone coeação.png" class="icon_nav"></a>
@@ -18,19 +18,22 @@
             <a href="login.html"><img src="src/assets/icones users.png" class="icon_nav"></a>
         </div>
     </header>
-    <img  id="imagens"/>
+    <img id="imagens"/>
     <div id="empresas">
         <div class="botao">
             <a><img src="src/assets/icone marvel.png" class="logos"></a>
         </div>
         <div class="botao">
-            <a><img src="src/assets/icone DC.png" class="logos"></a>
+            <a><img src="src/assets/icone DC.svg" class="logos"></a>
         </div>
         <div class="botao">
             <a><img src="src/assets/icone PM.png" class="logos"></a>
         </div>
         <div class="botao">
             <a><img src="src/assets/icone DSN.png" class="logos"></a>
+        </div>
+        <div class="botao">
+            <a><img src="src/assets/icone TDM.png" class="logos"></a>
         </div>
     </div>
     <div>
@@ -68,23 +71,25 @@
         </div>
     </div>    
         <div id="ultimate">
-            <div>
-                <div id="carousel">
-                  <div id="carousel-inner" style="display: flex; transition: transform 0.5s ease;">
-                    <img src="src/assets/foto ultimate.png" alt="Livro 1" data-title="Universo Ultimate" data-description="TEM INÍCIO A TRANSFORMAÇÃO DO UNIVERSO MARVEL! Os Illuminati precisam se reunir para salvar o universo." data-price="75" data-discount="52">
-                    <img src="src/assets/foto vampire.png" alt="Livro 2" data-title="Outro Livro" data-description="Descrição do segundo livro." data-price="80" data-discount="60">
-                    <img src="src/assets/foto man.png" alt="Livro 3" data-title="Mais Um Livro" data-description="Descrição do terceiro livro." data-price="90" data-discount="70">
-                    <img src="src/assets/foto monica.png" alt="Livro 4" data-title="Outro Livro" data-description="Descrição do segundo livro." data-price="80" data-discount="60">
-                  </div>
-                </div>
+            <div id="ultimate2">
                 <button id="prev">&#8249;</button>
+                <div id="carousel">
+                    <div id="carousel-inner" style="display: flex; transition: transform 0.5s ease;">
+                        <img src="src/assets/foto ultimate.png" alt="Livro 1" data-title="Universo Ultimate" data-description="TEM INÍCIO A TRANSFORMAÇÃO DO UNIVERSO MARVEL! Os Illuminati precisam se reunir para salvar o universo." data-price="75" data-discount="52">
+                        <img src="src/assets/foto vampire.png" alt="Livro 2" data-title="Outro Livro" data-description="Descrição do segundo livro." data-price="80" data-discount="60">
+                        <img src="src/assets/foto man.png" alt="Livro 3" data-title="Mais Um Livro" data-description="Descrição do terceiro livro." data-price="90" data-discount="70">
+                        <img src="src/assets/foto monica.jpg" alt="Livro 4" data-title="Outro Livro" data-description="Descrição do segundo livro." data-price="80" data-discount="60">
+                    </div>
+                </div>
                 <button id="next">&#8250;</button>
-              </div>
-              <div>
+            </div>
+            <div id="ultimatedesc">
                 <h2 id="title">Universo Ultimate</h2>
                 <p id="description">TEM INÍCIO A TRANSFORMAÇÃO DO UNIVERSO MARVEL! Os Illuminati precisam se reunir para salvar o universo.</p>
-                <p class="txtprice">Preço: <s id="price">R$ 75,00</s> <strong id="discount">R$ 52,00</strong></p>
-              </div>
+                <p class="txtprice">Preço:</p>
+                <p id="price">R$ 75,00</p>
+                <p id="discount">R$ 52,00</p>
+            </div>
         </div>
         <h2>Produtos para conhecer</h2>
         <div class="produtos">
@@ -135,12 +140,14 @@
                 <p>Politica de privacidade</p>
                 <p>Politica de cookies</p>
             </div>
-            <div id="symbols">
-                <img src="src/assets/icon instagram.png">
-                <img src="src/assets/icon twitter.png">
-                <img src="src/assets/icon facebook.png">
-            </div>
+            <div id="cadastro">
+                <div id="symbols">
+                    <img src="src/assets/icon instagram.png">
+                    <img src="src/assets/icon twitter.png">
+                    <img src="src/assets/icon facebook.png">
+                </div>
                 <h6>@Copyright 2024-todos os direitos reservados</h6>
+            </div>
         </footer>
 <script src="./src/js/script.js"></script>
 </body>
