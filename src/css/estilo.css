@@ -16,6 +16,14 @@ header{
     position: absolute;
     position:fixed;
 }
+/*.input-with-image {
+    background: url('./src/assets/Icone de pesquisa') no-repeat left center;
+    background-size: 20px;
+    padding-left: 30px;  
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}*/
 p{
     font-size:20px;
 }
