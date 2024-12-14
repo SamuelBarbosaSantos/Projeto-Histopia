@@ -1,11 +1,19 @@
 let imagens=[
     'src/assets/fotopromo 1.png',
-    'src/assets/fotopromo 1.png',
-    'src/assets/fotopromo 1.png'
+    'src/assets/fotopromo 2.jpg',
+    'src/assets/fotopromo 3.jpg',
+    'src/assets/fotopromo 4.jpg'
 ]
 
 let index =0;
 let time =3000;
+
+function slideShow(){
+  document.getElementById("imagens").src=imagens[index];
+  index++;
+  if(index == imagens.length){ index =0}
+  setTimeout("slideShow()",time)
+}
 
 const images = document.querySelectorAll('#carousel-inner img');
 const carouselInner = document.getElementById('carousel-inner');

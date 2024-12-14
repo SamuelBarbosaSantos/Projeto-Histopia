@@ -3,116 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/estilo.css">
     <title>Histopia</title>
 </head>
 <body>
-    <header class="nav">
-        <a href="index.html"><img src="src/assets/logo histopia fundo.png"></a>
-        <input <img src="src/assets/Icone de pesquisa.png"> <!--Aqui falta a imagem -->
-        <a><img src="src/assets/icone telefone.png" class="icon_nav" id="telefone"></a>
-        <a><img src="src/assets/Icone coeação.png" class="icon_nav"></a>
-        <a><img src="src/assets/icone carrinho.png" class="icon_nav"></a>
-        <a><img src="src/assets/icones users.png" class="icon_nav"></a>
+    <header>
+        <a href="index.html"><img src="src/assets/logo histopia fundo.png" id="logo"></a>
+        <img src="src/assets/Icone de pesquisa.png">
+        <div id="options">
+            <a><img src="src/assets/icone telefone.png" class="icon_nav" id="telefone"></a>
+            <a><img src="src/assets/Icone coeação.png" class="icon_nav"></a>
+            <a><img src="src/assets/icone carrinho.png" class="icon_nav"></a>
+            <a><img src="src/assets/icones users.png" class="icon_nav"></a>
+        </div>
     </header>
-    <img id="image">
-    <div class="empresas">
-        <div class="marvel">
-            <a><img src="src/assets/icone marvel.png"></a>
+    <img  id="imagens"/>
+    <div id="empresas">
+        <div class="botao">
+            <a><img src="src/assets/icone marvel.png" class="logos"></a>
         </div>
-        <div class="dc">
-            <a><img src="src/assets/icone DC.png"></a>
+        <div class="botao">
+            <a><img src="src/assets/icone DC.png" class="logos"></a>
         </div>
-        <div>
-            <a><img src="src/assets/icone PM.png"></a>
+        <div class="botao">
+            <a><img src="src/assets/icone PM.png" class="logos"></a>
         </div>
-        <div>
-            <a><img src="src/assets/icone DSN.png"></a>
+        <div class="botao">
+            <a><img src="src/assets/icone DSN.png" class="logos"></a>
         </div>
     </div>
     <div>
         <h2>Mais vendidos</h2>
-        <div>
-            <img src="src/assets/icone seta.png"><!-- imagem seta-->
+        <div class="produtos">
+            <img src="src/assets/icone seta.png" class="seta">
             <div>
-              <img src="src/assets/foto poke.png"> 
-              <p>Pokemón scarlet e violet - 1 envelope</p>
-              <p>R$6,00</p>
-              <button><img src="src/assets/icone carrinho 2.png"><p>Adicionar</p></button><img src="src/assets/Icone coeação.png"><!--Aqui tbm falta a imagem do carrinho -->
+                <img src="src/assets/foto poke.png" class="produtoimg">
+                <p class="shorttxt">Pokemón scarlet e violet - 1 unidade</p>
+                <p class="valorprod">R$6,00</p>
+                <div class="compra">
+                    <button class="carrinho"><img src="src/assets/icone carrinho 2.png"><p>Adicionar</p></button>
+                    <img src="src/assets/Icone coeação.png" class="coracao">
+                </div>
             </div>
             <div>
-                <img src="src/assets/foto copa.png">
-                <p>Album da Copa 2022 - 1 unidade</p>
-                <p>R$20,00</p>
-                <button><img src="src/assets/icone carrinho 2.png"><p>Adicionar</p></button><img src="src/assets/Icone coeação.png"><!--Aqui tbm falta a imagem do carrinho -->
+                <img src="src/assets/foto copa.png" class="produtoimg">
+                <p class="shorttxt">Album da Copa 2022 - 1 unidade</p>
+                <p class="valorprod">R$20,00</p>
+                <div class="compra">
+                    <button class="carrinho"><img src="src/assets/icone carrinho 2.png"><p>Adicionar</p></button>
+                    <img src="src/assets/Icone coeação.png" class="coracao">
+                </div>
             </div>
             <div>
-                <img src="src/assets/foto vaga.png">
-                <p>Mangá Vagabond - Vol 1</p>
-                <p>R$50,00</p>
-                <button><img src="src/assets/icone carrinho 2.png"><p>Adicionar</p></button><img src="src/assets/Icone coeação.png"><!--Aqui tbm falta a imagem do carrinho -->
+                <img src="src/assets/foto vaga.png" class="produtoimg">
+                <p class="shorttxt">Mangá Vagabond - Vol 1</p>
+                <p class="valorprod">R$50,00</p>
+                <div class="compra">
+                    <button class="carrinho"><img src="src/assets/icone carrinho 2.png"><p>Adicionar</p></button>
+                    <img src="src/assets/Icone coeação.png" class="coracao">
+                </div>
             </div>
-            <img src="src/assets/icone seta dire.png"><!--imagem seta-->
+            <img src="src/assets/icone seta dire.png" class="seta">
         </div>
     </div>    
-        <div class="ultimate">
+        <div id="ultimate">
             <div>
-                <button id="prev">&#8249;</button>
-                <div id="carousel" style="display: flex; overflow: hidden; width: 200px;">
+                <div id="carousel">
                   <div id="carousel-inner" style="display: flex; transition: transform 0.5s ease;">
                     <img src="src/assets/foto ultimate.png" alt="Livro 1" data-title="Universo Ultimate" data-description="TEM INÍCIO A TRANSFORMAÇÃO DO UNIVERSO MARVEL! Os Illuminati precisam se reunir para salvar o universo." data-price="75" data-discount="52">
                     <img src="src/assets/foto vampire.png" alt="Livro 2" data-title="Outro Livro" data-description="Descrição do segundo livro." data-price="80" data-discount="60">
                     <img src="src/assets/foto man.png" alt="Livro 3" data-title="Mais Um Livro" data-description="Descrição do terceiro livro." data-price="90" data-discount="70">
                     <img src="src/assets/foto monica.png" alt="Livro 4" data-title="Outro Livro" data-description="Descrição do segundo livro." data-price="80" data-discount="60">
-                    
                   </div>
                 </div>
+                <button id="prev">&#8249;</button>
                 <button id="next">&#8250;</button>
               </div>
               <div>
                 <h2 id="title">Universo Ultimate</h2>
                 <p id="description">TEM INÍCIO A TRANSFORMAÇÃO DO UNIVERSO MARVEL! Os Illuminati precisam se reunir para salvar o universo.</p>
-                <p>Preço: <s id="price">R$ 75,00</s> <strong id="discount">R$ 52,00</strong></p>
+                <p class="txtprice">Preço: <s id="price">R$ 75,00</s> <strong id="discount">R$ 52,00</strong></p>
               </div>
         </div>
-        <div>
-            <h2>Produtos para conhecer</h2>
+        <h2>Produtos para conhecer</h2>
+        <div class="produtos">
+            <img src="src/assets/icone seta.png" class="seta">
             <div>
-                <img src="src/assets/foto one.png">
-                <p>One piece Vol 1</p>
-                <p>R$6,00</p>
-                <button><img src="src/assets/icone carrinho 2.png"><p>Adicionar</p></button><img src="src/assets/Icone coeação.png"><!--Aqui tbm falta a imagem do carrinho -->
+                <img src="src/assets/foto one.png" class="produtoimg">
+                <p class="shorttxt">One Piece Volume 1 - Edição Especial de Aniversário</p>
+                <p class="valorprod">R$50,00</p>
+                <div class="compra">
+                    <button class="carrinho"><img src="src/assets/icone carrinho 2.png"><p>Adicionar</p></button>
+                    <img src="src/assets/Icone coeação.png" class="coracao">
+                </div>
             </div>
             <div>
-                <img src="src/assets/foto diver.png">
-                <p>Album do divertidamente 2 - 1 unidade + 5 pacotes</p>
-                <p>R$18,00</p>
-                <button><img src="src/assets/icone carrinho 2.png"><p>Adicionar</p></button><img src="src/assets/Icone coeação.png"><!--Aqui tbm falta a imagem do carrinho -->
+                <img src="src/assets/foto diver.png" class="produtoimg">
+                <p class="shorttxt">Album do divertidamente 2 - 1 unidade + 5 pacotes</p>
+                <p class="valorprod">R$18,00</p>
+                <div class="compra">
+                    <button class="carrinho"><img src="src/assets/icone carrinho 2.png"><p>Adicionar</p></button>
+                    <img src="src/assets/Icone coeação.png" class="coracao">
+                </div>
             </div>
             <div>
-                <img src="src/assets/foto aranha.png">
-                <p>Homem-Aranha:Azul (Marvel Essenciais)</p>
-                <p>R$80,00</p>
-                <button><img src="src/assets/icone carrinho 2.png"><p>Adicionar</p></button><img src="src/assets/Icone coeação.png"><!--Aqui tbm falta a imagem do carrinho -->
+                <img src="src/assets/foto aranha.png" class="produtoimg">
+                <p class="shorttxt">Homem-Aranha:Azul (Marvel Essenciais)</p>
+                <p class="valorprod">R$80,00</p>
+                <div class="compra">
+                    <button class="carrinho"><img src="src/assets/icone carrinho 2.png"><p>Adicionar</p></button>
+                    <img src="src/assets/Icone coeação.png" class="coracao">
+                </div>
             </div>
+            <img src="src/assets/icone seta dire.png" class="seta">
         </div>
         <footer>
-            <img src="src/assets/Logo histopia.png">
-            <h2>Suas Compras</h2>
-            <p>Login/registro</p>
-            <p>Termos e Condições</p>
-            <p>Metodos e pagamentos</p>
-            <p>Perguntas frequentes</p>
-            <h2>Serviços para você</h2>
-            <p>Termos e condições</p>
-            <p>Regulamentos</p>
-            <p>Noticias</p>
-            <p>Politica de privacidade</p>
-            <p>Politica de cookies</p>
-            <!--Falta as imagens do instagram,X e do facebook -->
-            <img src="src/assets/icon instagram.png">
-            <img src="src/assets/icon twitter.png">
-            <img src="src/assets/icon facebook.png">
-            <h6>@Copyright 2024-todos os direitos reservados</h6>
+            <img src="src/assets/Logo histopia.png" id="icon2">
+            <div class="tower">
+                <h3>Suas Compras</h3>
+                <p>Login/registro</p>
+                <p>Termos e Condições</p>
+                <p>Metodos e pagamentos</p>
+                <p>Perguntas frequentes</p>
+            </div>
+            <div class="tower">
+                <h3>Serviços para você</h3>
+                <p>Termos e condições</p>
+                <p>Regulamentos</p>
+                <p>Noticias</p>
+                <p>Politica de privacidade</p>
+                <p>Politica de cookies</p>
+            </div>
+            <div id="symbols">
+                <img src="src/assets/icon instagram.png">
+                <img src="src/assets/icon twitter.png">
+                <img src="src/assets/icon facebook.png">
+            </div>
+                <h6>@Copyright 2024-todos os direitos reservados</h6>
         </footer>
 <script src="./src/js/script.js"></script>
 </body>

@@ -1,0 +1,204 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    background-color: #000925;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    position:fixed;
+}
+p{
+    font-size:20px;
+}
+h2{
+    font-size: 60px;
+    display:flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+#logo{
+    height: 60px;
+    width: 65px;
+    margin-left: 20px;
+}
+.icon_nav{
+    height: 25px;
+    width: 25px;
+    margin-right: 15px;
+}
+#banner{
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+.botao{
+    border: 5px solid white;
+    border-width: 10px;
+    border-radius: 15px;
+    box-shadow: 15px 18px #8d8d8d;
+}
+#empresas{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.produtos{
+    display: flex;
+    justify-content: space-between;
+}
+.seta{
+    height: 60px;
+    margin-top: 180px
+}
+.produtoimg{
+    height: 450px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.valorprod{
+    display:flex;
+    justify-content: center;
+    font-size: 30px;
+}
+.carrinho{
+    background-color: #603dff;
+    display:flex;
+    height: 70px;
+    width:150px;
+    font-size: 40px;
+    align-items:center;
+    border-radius: 20px;
+    justify-content: space-around;
+    border:0;
+}
+.compra{
+    display:flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+.desc{
+    border: 200px solid white;
+}
+#ultimate{
+    background-color:#000925;
+    flex-direction: column;
+    display:flex;
+    justify-content: center;
+}
+#carousel{
+    display: flex;
+    overflow: hidden;
+    width: 200px;
+}
+#title{
+    color: #d7ac00;
+}
+#description{
+    color: white;
+}
+#price{
+    color: #8d8d8d;
+}
+.shorttxt{
+    width:300px;
+}
+footer{
+    background-color: #000925;
+    display:flex;
+}
+footer p{
+    color: white;
+    font-size: 15px;
+}
+footer h3{
+    color:white;
+}
+footer h6{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.tower{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#symbols{
+    display: flex;
+    justify-content: center;
+    margin: 130px 0 30px 0;
+}
+@media (max-width:500px) {
+    header{
+        height: 60px;
+    }
+    h2{
+        font-size: 40px;
+    }
+    p{
+        font-size: 15px;
+    }
+    #banner{
+        margin-top: 60px;
+    }
+    .logos{
+        height: 40px;
+        width: 70px;
+    }
+    .seta{
+        height: 30px;
+        width: 30px;
+    }
+    .produtoimg{
+        width:100px;
+        height: 140px;
+    }
+    .shorttxt{
+        width: 100px;
+    }
+    .valorprod{
+        font-size: 20px;
+        margin-left: -0px;
+    }
+    .compra{
+        flex-direction: column;
+    }
+    .carrinho{
+        height:40px;
+        width:100px;
+    }
+    .coracao{
+        width: 50px;
+        height: 50px;
+        margin-left: 25px;
+    }
+    footer{
+        flex-direction: column;
+    }
+    footer p{
+        font-size: 12px;
+    }
+    footer h2{
+        font-size: 20px;
+    }
+    #icon2{
+        width: 180px;
+        height: 180px;
+        margin-left: 135px;
+    }
+    .tower{
+        margin-left: 160px;
+        margin-right: 0px;
+        margin-top: 40px;
+    }
+}
