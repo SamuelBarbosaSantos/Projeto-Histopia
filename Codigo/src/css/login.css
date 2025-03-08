@@ -56,7 +56,7 @@ p{
     display: flex;
     margin-top: 30px;
 }
-#botao{
+.botao{
     width: 100px;
     height: 50px;
     background-color: #C3C3C3;

@@ -3,31 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
-    <link rel="icon" href="./src/assets/logo histopia fundo.png" >
-    <link rel="stylesheet" href="./src/css/cadastro.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="./src/css/login.css">
+    <link rel="icon" href="./src/assets/logo histopia fundo.png" type="image/x-icon">
 </head>
 <body>
     <header>
         <a href="index.html"><img src="src/assets/logo histopia fundo.png" id="logo"></a>
     </header>
-    <div id="cadastrar">
+    <div id="entrar">
         <h1>Login</h1>
         <div class="inserir">
-            <input type="text" class="input" placeholder="Digite seu E-mail">
+            <input type="text" class="input" id="login">
             <img src="./src/assets/icon login.svg" class="symbol">
         </div>
         <div class="inserir">
-            <input type="password" class="input" placeholder="Digite sua Senha">
+            <input type="password" class="input" id="senha">
             <img src="./src/assets/icon senha.svg" class="symbol">
         </div>
-        <div class="inserir">
-            <input type="password" class="input" placeholder="Confirme sua Senha">
-            <img src="./src/assets/icon senha.svg" class="symbol">
-        </div>
-        <button onclick="window.location.href='index.html'" id="botao">Criar</button>
-        <h3>Já tem uma conta??</h3>
-        <a href="login.html"><h3>Acesse aqui</h3></a>
+        <button class="botao" onclick="entrar()">Entrar</button>
+        <h3>Ainda não tem acesso??</h3>
+        <a href="cadastro.html"><h3>Se cadastre aqui</h3></a>
     </div>
     <footer>
         <img src="src/assets/Logo histopia.png" id="icon2">
@@ -47,7 +43,7 @@
             <p>Politica de cookies</p>
         </div>
         <div id="correcao">
-            <div id="symbols">
+            <div class="redes">
                 <img src="src/assets/icon instagram.png">
                 <img src="src/assets/icon twitter.png">
                 <img src="src/assets/icon facebook.png">
@@ -55,5 +51,6 @@
             <p>@Copyright 2024-todos os direitos reservados</p>
         </div>
     </footer>
+    <script src="./src/js/login.js"></script>
 </body>
 </html>
