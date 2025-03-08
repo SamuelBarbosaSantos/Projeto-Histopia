@@ -15,6 +15,7 @@ header{
     justify-content: space-between;
     position: absolute;
     position:fixed;
+    z-index: 1;
 }
 #search{
     width: 300px;
@@ -81,6 +82,14 @@ h2{
     justify-content: center;
     font-size: 30px;
 }
+.card{
+    margin-bottom: 140px;
+}
+.barra{
+    background-color: white;
+    margin-top: -120px;
+    position: absolute;
+}
 .carrinho{
     background-color: #603dff;
     display:flex;
@@ -127,6 +136,10 @@ h2{
     display: flex;
     overflow: hidden;
     width: 400px;
+}
+.livros{
+    width: 300px;
+    height: 400px;
 }
 #ultimatedesc{
     display: flex;
@@ -184,119 +197,7 @@ footer h6{
     margin-left: -360px;
     margin-top: 200px;
 }
-
-
-
-
-
-
-
-
-
-
-section{
-    width: 100%;
-    height: 31vh;
-  
-    h2{
-      font-size: clamp(0.9em, 1vw, 2em);
-      margin: 0.2em 0;
-      font-weight: 500;
-    }
-  }
-  
-  .carossel-Container{
-    position: relative;
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-  }
-  
-  .carossel-Slide{
-    position: relative;
-    display: flex;
-    height: auto;
-    width: 90%;
-    overflow: visible;
-    margin: 0 auto;
-  }
-  
-  .item{
-    position: relative;
-    right: 0;
-    flex: none;
-    border-radius: 2px;
-    margin-right: 0.2em;
-    height: 300px;
-  width: 1500px;
-    transition: right 1s ease-out;
-    box-sizing: content-box;
-    p{
-        width: 565px;
-        font-size: 15px;
-    }
-  }
-  
-  .btnCarossel{
-    background: rgba(20,20,20,.5);
-    width: 5%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    display: flex;  
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .btnCarossel:hover{
-    background: rgba(20,20,20,.65);
-  
-    #seta{
-      box-shadow: 2px -2px 0 1px #fff inset;
-      transition: box-shadow 100ms;
-    }
-  }
-  
-  
-  
-  .BtnBack{
-    left: 0;
-  
-    #seta{
-      position: absolute;
-    padding: 17%;
-    box-shadow: 2px -2px 0 -1px #fff inset;
-    border: solid transparent;
-    border-width: 0 0 2px 2px;
-    margin: 0 auto;
-    opacity: 0;
-    transition: box-shadow 100ms;
-    transform: rotate(45deg);
-    }
-  }
-  
-  .BtnNext{
-    right: 0;
-  }
-    #seta{
-      position: absolute;
-      padding: 17%;
-      box-shadow: 2px -2px 0 -1px #fff inset;
-      border: solid transparent;
-      border-width: 0 0 2px 2px;
-      margin: 0 auto;
-      opacity: 0;
-      transition: box-shadow 100ms;
-    transform: rotate(225deg); 
-    }
-
-
-
-
-
-
-@media (max-width:500px) {
+@media (max-width:700px) {
     header{
         height: 60px;
     }
@@ -329,6 +230,7 @@ section{
     .seta{
         height: 30px;
         width: 30px;
+        margin-top: 100px;
     }
     .produtoimg{
         width:100px;
@@ -336,6 +238,13 @@ section{
     }
     .shorttxt{
         width: 100px;
+    }
+    .barra{
+        margin-top: -30px;
+        height: 90px;
+    }
+    .card{
+        margin-bottom: 180px;
     }
     .valorprod{
         font-size: 20px;
