@@ -20,6 +20,9 @@ header {
     z-index: 1;
     padding: 0 10%;
 }
+body{
+    background-color: #C3C3C3;
+}
 #conteudo{
     display:flex;
 }
@@ -50,9 +53,14 @@ header {
 }
 
 #descricao {
-    margin-top:200px;
-    width: 500px;
+    border-radius: 10px;
+    margin-top: 200px;
+    margin-left: 30px;
+    padding: 10px;
+    width: 700px;
     text-align: center;
+    background-color: #ddd;
+    height: 300px;
 }
 
 #descricao h3 {
@@ -64,7 +72,6 @@ header {
 
 #descricao p {
     font-size: 1rem;
-    color: #555;
     margin-bottom: 20px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
@@ -74,7 +81,8 @@ button.Comprar {
     background-color: #000925;
     color: white;
     border: none;
-    padding: 10px 20px;
+    width: 100px;
+    height: 50px;
     font-size: 1rem;
     border-radius: 5px;
     cursor: pointer;
@@ -84,18 +92,19 @@ button.Comprar:hover {
     background-color: #603dff;
 }
 
-#visualizacao {
-    padding: 40px 10%;
+#visualizacao { 
+    margin-top: 200px;
+    margin-left: 250px;
+    margin-bottom: 100px;
     text-align: center;
 }
 
 #visualizacao img {
-    width: 100%;
+    width: 350px;
     max-width: 500px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 #selecionar-imagem {
     list-style: none;
     display: flex;

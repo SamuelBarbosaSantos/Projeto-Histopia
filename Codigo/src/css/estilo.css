@@ -84,6 +84,7 @@ h2{
 }
 .card{
     margin-bottom: 140px;
+    cursor:pointer;
 }
 .barra{
     background-color: white;

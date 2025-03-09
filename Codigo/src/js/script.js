@@ -1,8 +1,8 @@
 let imagens=[
-  'src/assets/fotopromo 1.png',
-  'src/assets/fotopromo 2.jpg',
-  'src/assets/fotopromo 3.jpg',
-  'src/assets/fotopromo 4.jpg'
+  'src/assets/fotopromo1.jpg',
+  'src/assets/fotopromo2.jpg',
+  'src/assets/fotopromo3.jpg',
+  'src/assets/fotopromo4.jpg'
 ]
 
 let index =0;
