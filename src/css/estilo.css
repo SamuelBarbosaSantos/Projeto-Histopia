@@ -6,22 +6,38 @@
 html{
     scroll-behavior: smooth;
 }
-header{
-    background-color: #000925;
-    width: 100%;
-    height: 100px;
+header {
+    background-color: #0a0a2a;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    position: absolute;
-    position:fixed;
-    z-index: 1;
+    align-items: center;
+    padding: 10px 20px;
 }
-#search{
+#logo {
+    width: 80px;
+}
+#search {
     width: 300px;
-    height: 50px;
-    background-color: #C3C3C3;
-    border-radius: 30px;
+    padding: 8px 15px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+#search:focus {
+    border-color: #007bff;
+}
+#options {
+    display: flex;
+    gap: 15px;
+}
+.icon_nav {
+    width: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.icon_nav:hover {
+    transform: scale(1.1);
 }
 p{
     font-size:20px;
@@ -45,9 +61,8 @@ h2{
 }
 #imagens{
     width: 100%;
-    height: 550px;
+    height: 583px;
     margin-bottom: 50px;
-    margin-top: 100px;
 }
 .botao{
     border: 20px solid white;
@@ -64,151 +79,160 @@ h2{
     justify-content: space-around;
     margin-bottom: 50px;
 }
-.produtos{
+.produtos {
     display: flex;
-    justify-content: space-between;
-}
-.seta{
-    height: 60px;
-    margin-top: 180px
-}
-.produtoimg{
-    height: 450px;
-    width: 300px;
-    display: flex;
-    justify-content: space-between;
-}
-.valorprod{
-    display:flex;
-    justify-content: center;
-    font-size: 30px;
-}
-.card{
-    margin-bottom: 140px;
-    cursor:pointer;
-}
-.barra{
-    background-color: white;
-    margin-top: -120px;
-    position: absolute;
-}
-.carrinho{
-    background-color: #603dff;
-    display:flex;
-    height: 70px;
-    width:150px;
-    font-size: 40px;
-    align-items:center;
-    border-radius: 20px;
-    justify-content: space-around;
-    border:0;
-}
-.compra{
-    display:flex;
-    justify-content: space-around;
-    margin-bottom: 100px;
-}
-.desc{
-    border: 200px solid white;
-}
-#ultimate{
-    background-color:#000925;
-    flex-direction: column;
-    display:flex;
     align-items: center;
-    padding-top: 100px;
+    justify-content: space-between;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px;
 }
-#ultimate2{
-    display:flex;
-    justify-content: space-around;
+
+.card {
+    flex: 0 0 250px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+    cursor: pointer;
 }
-#prev{
-    width: 50px;
-    height: 50px;
-    margin-top: 250px;
-    margin-right: 400px;
+
+.card:hover {
+    transform: translateY(-5px);
 }
-#next{
-    width: 50px;
-    height: 50px;
-    margin-top: 250px;
-    margin-left: 400px;
+
+.produtoimg {
+    width: 100%;
+    border-radius: 10px;
 }
-#carousel{
+
+.barra {
+    padding: 10px;
+}
+
+.shorttxt {
+    color: #333;
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.valorprod {
+    color: #0a0a2a;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.compra {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.carrinho {
+    display: flex;
+    align-items: center;
+    background: #0a0a2a;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    cursor: pointer;
+}
+.carrinho:hover{
+    background-color: #007bff;
+}
+.carrinho img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.coracao {
+    width: 25px;
+    cursor: pointer;
+}
+
+.seta {
+    width: 30px;
+    cursor: pointer;
+}
+
+#ultimate {
+    background-color: #0a0a2a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#ultimate2 {
+    display: flex;
+    align-items: center;
+}
+
+#carousel {
     overflow: hidden;
     width: 400px;
 }
-.livros{
-    width: 400px;
-    height: 500px;
-}
-#ultimatedesc{
+
+#carousel-inner {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 600px;
+    transition: transform 0.5s ease;
 }
-.txtprice{
-    color: white;
+
+.livros {
+    width: 100%;
+    border-radius: 10px;
 }
-#discount{
-    color: white;
-}
-#title{
-    color: #d7ac00;
-}
-#description{
-    color: white;
-}
-#price{
-    color: #8d8d8d;
-}
-.shorttxt{
-    width:300px;
-}
-footer{
-    background-color: #000925;
-    padding-top: 100px;
-}
-footer p{
-    color: white;
-    font-size: 15px;
-}
-footer h3{
+
+#ultimatedesc {
     color:white;
+    padding-left: 20px;
 }
-footer h6{
+
+.txtprice {
+    font-weight: bold;
+}
+
+#prev, #next {
     color: white;
+    background: none;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    padding: 10px;
+}
+
+footer {
+    background: #0a0a2a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#towers {
     display: flex;
-    justify-content: center;
-}
-#icon2{
-    height: 150px;
-    width: 150px;
-}
-.tower{
-    margin-left: 100px;
-    margin-right: 100px;
-}
-#symbols{
-    display: flex;
-    justify-content: center;
-    margin: 130px 0 30px 0;
-}
-#correcao{
-    display: flex;
-    flex-direction: column;
-    margin-left: -360px;
-    margin-top: 200px;
-}
-#towers{
-    padding-left:100px;
-    display:flex;
     justify-content: space-around;
-    align-items: center;
+    flex-wrap: wrap;
 }
-@media (max-width:500px) {
+
+.tower h3 {
+    margin-bottom: 10px;
+}
+
+#symbols {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#symbols img {
+    width: 30px;
+    cursor: pointer;
+}
+@media (max-width: 500px) {
     header{
         height: 60px;
     }
@@ -232,61 +256,32 @@ footer h6{
         font-size: 12px;
     }
     #imagens{
-        margin-top: 60px;
         height: 100%;
+    }
+    .produtos {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        flex: 1 1 100%;
+        max-width: 90%;
+    }
+    #ultimate {
+        flex-direction: column;
+        text-align: center;
+    }
+    #ultimate2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    #ultimatedesc {
+        padding-left: 0;
     }
     .logos{
         height: 40px;
         width: 70px;
     }
-    .seta{
-        height: 30px;
-        width: 30px;
-        margin-top: 100px;
-    }
-    .produtoimg{
-        width:100px;
-        height: 140px;
-    }
-    .shorttxt{
-        width: 90px;
-    }
-    .barra{
-        margin-top: -30px;
-        height: 90px;
-    }
-    .card{
-        margin-bottom: 180px;
-    }
-    .valorprod{
-        font-size: 20px;
-        margin-left: -0px;
-    }
-    .compra{
-        flex-direction: column;
-    }
-    .carrinho{
-        height:40px;
-        width:100px;
-    }
-    .coracao{
-        width: 50px;
-        height: 50px;
-        margin-left: 25px;
-    }
-    #prev{
-        width: 20px;
-        height: 20px;
-        margin-right:0;
-    }
-    #next{
-        width: 20px;
-        height: 20px;
-        margin-left:0;
-    }
-    #ultimatedesc{
-        width: 490px;
-    }
+    
     footer{
     }
     footer p{
@@ -305,8 +300,8 @@ footer h6{
         margin-right: 0px;
         margin-top: 40px;
     }
-    #towers{
-        padding-left: 0;
+    #towers {
         flex-direction: column;
+        text-align: center;
     }
 }

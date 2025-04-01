@@ -1,186 +1,186 @@
+
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
-
-html {
-    scroll-behavior: smooth;
+body {
+    background-color: #f5f5f5;
 }
-
 header {
-    background-color: #000925;
-    width: 100%;
-    height: 100px;
+    background-color: #0a0a2a;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    padding: 0 10%;
-}
-body{
-    background-color: #C3C3C3;
-}
-#conteudo{
-    display:flex;
+    align-items: center;
+    padding: 10px 20px;
 }
 #logo {
-    height: 100px;
-    width: 110px;
-    margin-left: 20px;
+    width: 80px;
 }
-
 #search {
     width: 300px;
-    height: 50px;
-    background-color: #C3C3C3;
-    border-radius: 30px;
-    border: none;
-    padding: 0 20px;
-    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
 }
-
-#options a {
-    margin-left: 15px;
+#search:focus {
+    border-color: #007bff;
 }
-
+#options {
+    display: flex;
+    gap: 15px;
+}
 .icon_nav {
-    height: 25px;
     width: 25px;
-    margin-right: 15px;
-}
-
-#descricao {
-    border-radius: 10px;
-    margin-top: 200px;
-    margin-left: 30px;
-    padding: 10px;
-    width: 700px;
-    text-align: center;
-    background-color: #ddd;
-    height: 300px;
-}
-
-#descricao h3 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-}
-
-#descricao p {
-    font-size: 1rem;
-    margin-bottom: 20px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-}
-
-button.Comprar {
-    background-color: #000925;
-    color: white;
-    border: none;
-    width: 100px;
-    height: 50px;
-    font-size: 1rem;
-    border-radius: 5px;
     cursor: pointer;
+    transition: 0.3s;
 }
-
-button.Comprar:hover {
-    background-color: #603dff;
+.icon_nav:hover {
+    transform: scale(1.1);
 }
-
-#visualizacao { 
-    margin-top: 200px;
-    margin-left: 250px;
-    margin-bottom: 100px;
-    text-align: center;
+#conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 1000px;
 }
-
-#visualizacao img {
-    width: 350px;
-    max-width: 500px;
+#descricao {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+}
+#descricao h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #222;
+}
+#descricao p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+#preco {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007bff;
+    margin-top: 15px;
+}
+.Comprar {
+    width: 100%;
+    background-color: #0a0a2a;
+    color: rgb(255, 255, 255);
+    padding: 12px;
+    border: none;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+.Comprar:hover {
+    background-color: #007bff;
+}
+#visualizacao img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 #selecionar-imagem {
-    list-style: none;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    gap: 10px;
+    margin-top: 10px;
 }
-
-#selecionar-imagem li {
-    margin: 0 10px;
-}
-
-#selecionar-imagem input {
-    display: none;
-}
-
-#selecionar-imagem label img {
-    width: 60px;
-    height: 60px;
-    object-fit: cover;
+#selecionar-imagem img {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
     cursor: pointer;
-    border: 2px solid transparent;
-    transition: border 0.3s ease;
+    transition: 0.3s;
 }
-
-#selecionar-imagem input:checked + label img {
-    border: 2px solid #603dff;
+#selecionar-imagem img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
 }
-
 footer {
-    background-color: #000925;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 40px 10%;
-    justify-content: space-between;
+    background-color: #0a0a2a;
     color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
 }
-
-footer #icon2 {
-    max-width: 180px;
-    margin-bottom: 30px;
-}
-
-footer .tower {
-    margin: 20px;
-}
-
-footer .tower h3 {
-    font-size: 1.2rem;
+.tower h3 {
     margin-bottom: 10px;
 }
-
-footer .tower p {
-    font-size: 1rem;
-    color: #ddd;
+#symbols img {
+    width: 25px;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.3s;
 }
-
-footer #cadastro {
-    text-align: center;
+#symbols img:hover {
+    transform: scale(1.1);
 }
-
-footer #symbols {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
+@media (max-width: 500px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+    }
+    #search {
+        width: 90%;
+        margin: 10px 0;
+    }
+    #options {
+        gap: 10px;
+    }
+    #conteudo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        padding: 10px;
+    }
+    #descricao {
+        max-width: 90%;
+        padding: 15px;
+    }
+    #visualizacao img {
+        max-width: 80%;
+    }
+    #selecionar-imagem {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .Comprar {
+        width: 100%;
+        font-size: 16px;
+        padding: 10px;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .tower {
+        margin: 10px 0;
+    }
+    #symbols {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px;
+    }
 }
-
-footer #symbols img {
-    width: 30px;
-    height: 30px;
-    margin: 0 10px;
-    object-fit: contain;
-}
-
-footer h6 {
-    font-size: 0.8rem;
-    color: #ddd;
-}
-
-
